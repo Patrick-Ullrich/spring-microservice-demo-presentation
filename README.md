@@ -8,37 +8,48 @@
 @EnableConfigServer
 @EnableDiscoveryClient
 ```
+#### bootstrap.properties
+```java
 server.port=8888
 spring.application.name=config
 spring.cloud.config.server.git.uri=file//${user.home}/application-config-demo
 eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
 eureka.client.registryFetchIntervalSeconds=5
+```
 
 ## Discovery-Server
 ```java
 @EnableEurekaServer
 ```
+#### bootstrap.properties
+```java
 spring.application.name=discovery
 spring.cloud.config.uri=http://localhost:8888
+```
 
 ## Edge-Server
 ```java 
 @EnableZuulProxy
 @EnableDiscoveryClient
 ```
-
+#### bootstrap.properties
+```java
 spring.application.name=gateway
 spring.cloud.config.discovery.service-id=config
 spring.cloud.config.discovery.enabled=true
+```
 
 ## Maintenance-Service
 ```java
 @EnableDiscoveryClient 
 @RestController
 ```
+#### bootstrap.properties
+```java
 spring.application.name=maintenance
 spring.cloud.config.discovery.service-id=config
 spring.cloud.config.discovery.enabled=true
+```
 
 ## Couple ressources:
 
