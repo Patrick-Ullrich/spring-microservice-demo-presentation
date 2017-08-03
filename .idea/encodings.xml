@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/core/maintenance-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/discovery-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/edge-server" charset="UTF-8" />
+  </component>
+</project>
