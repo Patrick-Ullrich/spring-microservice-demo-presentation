@@ -27,3 +27,14 @@ spring.cloud.config.discovery.enabled=true
 spring.application.name=maintenance
 spring.cloud.config.discovery.service-id=config
 spring.cloud.config.discovery.enabled=true
+
+Couple ressources:
+http://callistaenterprise.se/blogg/teknik/2015/05/20/blog-series-building-microservices/
+
+https://spring.io/guides/tutorials/spring-security-and-angular-js/
+
+http://www.baeldung.com/spring-cloud-bootstrapping
+
+https://spring.io/guides/gs/centralized-configuration/
+
+http://start.spring.io/
